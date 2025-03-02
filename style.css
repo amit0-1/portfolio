@@ -360,7 +360,7 @@ body {
     width: 80%;
 }
 
-.progress-line.python span {
+.progress-line.sql span {
     width: 55%;
 }
 
@@ -393,7 +393,7 @@ body {
     content: "80%";
 }
 
-.progress-line.python span::after {
+.progress-line.sql span::after {
     content: "75%";
 }
 
