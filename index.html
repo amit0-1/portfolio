@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio</title>
+        <link rel="shortcut icon" type="image/png" href="ic.png">
+        <link rel="stylesheet" href="style.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <script src="script.js"></script>
+        
+    </head>
+    <body>
+        
+        <header class="header">
+            
+            <a href="#" class="logo">Portfolio</a>
+            <nav class="navbar" id="myLinks">
+                <a href="#Home" style="--i:1" class="active" >Home</a>
+                <a href="#About" style="--i:2">About</a>
+                <a href="#Skills" style="--i:3">Skills</a>
+                <a href="#Projects" style="--i:4">Projects</a>
+                <a href="#Contact" style="--i:5">Contact</a>
+            </nav>
+        </header>
+
+
+        <section class="home" id="Home">
+            <div class="home-content">
+                
+                <h3>Hello, It's Me</h3>
+                <h1>AMIT KUMAR</h1>
+                <h4 style="--i:6">I'm a Engineering student who is<br>
+                    passionate in <span id="typing-animation"></span></h4>
+                <!-- Element to contain animated typing -->
+						
+
+						<script>
+
+						// Initialize the typing animation
+						const typingAnimationElement = document.getElementById('typing-animation');
+
+						// Create an array of typing text
+						const typingTexts = [
+						'Programming  ',
+						'Web Development ',
+						'Cybersecurity ',
+						];
+
+						// Create a function to display the typing animation for a given text
+						function playTypingAnimation(text) {
+						// Loop through each character and add it to the element
+						for (let i = 0; i < text.length; i++) {
+							setTimeout(() => {
+							typingAnimationElement.textContent += text[i];
+							}, i * 200); // Increase the delay to slow down the typing animation
+						}
+
+						// Once the animation is complete, reset the text and start over
+						setTimeout(() => {
+							typingAnimationElement.textContent = '';
+							playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+						}, text.length * 200);
+						}
+
+						// Start the typing animation loop
+						playTypingAnimation(typingTexts[0]);
+
+						</script>
+                
+                <div class="img">
+                     <img src="name.jpeg" class="responsive">
+                </div>
+
+                <div class="home-sci">
+                    <a href="https://www.linkedin.com/in/amit-kumar-79417925b"style="--i:7" target="_blank"><i class='bx bxl-linkedin'></i></a>
+                    <a href="https://github.com/amit0-1"style="--i:10" target="_blank"><i class='bx bxl-github'></i></a>
+                </div>
+                <a href="https://drive.google.com/file/d/1r4LE8zooWYHR_8PHpregOLsuAmB4Ff4Z/view?usp=sharing" style="--i:11" class="btn-box" target="_blank">Download Resume</a>
+            </div>
+        </section>
+
+
+        <section>
+            <div class="about" id="About">
+                <div class="about-img">
+                    <img src="pp.jpeg" class="abt-res">
+                </div>
+                <div class="about-text">
+                    <h2>About <span>Me</span></h2>
+                    <p>Aspiring computer programmer with a BTech degree and proven problem-solving and troubleshooting skills. Having knowledge in JAVA , FULLSTACK WEB DEVELOPER , SQL. Seeking an entry-level programmer or coder position to continue expanding my knowledge of different languages and systems.<br>
+                        <br>
+                        <a href="https://drive.google.com/file/d/1r4LE8zooWYHR_8PHpregOLsuAmB4Ff4Z/view?usp=sharing" style="--i:11" class="abtbtn-box" target="_blank">Download Resume</a>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        
+        <section id="Skills">
+            <h1 class="subtitle">My <span>Skills</span></h1>
+            <div class="sec">
+                <div class="container1">
+                    <h1 class="heading1">Technical Skills</h1>
+                    <div class="Technical-bars">
+
+                        <div class="bar"><i class='bx bxl-html5' style="color: #c9332e;"></i>
+                            <div class="info">
+                                <span>HTML <span class="addhtml"></span></span>
+                            </div>
+                            <div class="progress-line html">
+                                <span></span>
+                            </div>
+                        </div>
+
+                        <div class="bar"><i class='bx bxl-css3' style="color: #147bbc;"></i>
+                            <div class="info">
+                                <span>CSS <span class="addcss"></span></span>
+                            </div>
+                            <div class="progress-line css">
+                                <span></span>
+                            </div>
+                        </div>
+
+                        <div class="bar"><i class='bx bxl-python' style="color: #b0bc1e;"></i>
+                            <div class="info">
+                                <span>SQL <span class="addpy"></span></span>
+                            </div>
+                            <div class="progress-line python">
+                                <span></span>
+                            </div>
+                        </div>
+
+                        <div class="bar"><i class='bx bxl-java' style="color: #c95d2e;"></i>
+                            <div class="info">
+                                <span>Java <span class="addjava"></span></span>
+                            </div>
+                            <div class="progress-line java">
+                                <span></span>
+                            </div>
+                        </div>
+
+                        <div class="bar"><i class='bx bxl-c-plus-plus'style="color: #3db2fc;"></i>
+                            <div class="info">
+                                <span>Back-end Development<span class="addc"></span></span>
+                            </div>
+                            <div class="progress-line cpls">
+                                <span></span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="container2">
+                    <h1 class="heading1">Professional Skills</h1>
+                    <div class="radial-bars">
+                        <div class="radial-bar">
+                            <svg x="0px" y="0px" viewBox="0 0 200 200">
+                                <circle class="progress-bar" cx="100" cy="80" r="80"></circle>
+                                <circle class="path path-1" cx="100" cy="80" r="80"></circle>
+                            </svg>
+                            <div class="percentage">60%</div>
+                            <div class="text">Problem Solving</div>
+                        </div>
+
+                        <div class="radial-bar">
+                            <svg x="0px" y="0px" viewBox="0 0 200 200">
+                                <circle class="progress-bar" cx="100" cy="80" r="80"></circle>
+                                <circle class="path path-2" cx="100" cy="80" r="80"></circle>
+                            </svg>
+                            <div class="percentage">70%</div>
+                            <div class="text">Creativity</div>
+                        </div>
+
+                        <div class="radial-bar">
+                            <svg x="0px" y="0px" viewBox="0 0 200 200">
+                                <circle class="progress-bar" cx="100" cy="80" r="80"></circle>
+                                <circle class="path path-3" cx="100" cy="80" r="80"></circle>
+                            </svg>
+                            <div class="percentage">80%</div>
+                            <div class="text">Communication</div>
+                        </div>
+
+                        <div class="radial-bar">
+                            <svg x="0px" y="0px" viewBox="0 0 200 200">
+                                <circle class="progress-bar" cx="100" cy="80" r="80"></circle>
+                                <circle class="path path-4" cx="100" cy="80" r="80"></circle>
+                            </svg>
+                            <div class="percentage">90%</div>
+                            <div class="text">Teamwork</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+<!--         <section id="Projects">
+            <div id="portfolio" class="services">
+                <div class="main-text" id="serv">
+                    <h2>My <span>Projects</span></h2>
+                    <div class="serv-container">
+                        <div class="row">
+                            <img src="https://cdn.dribbble.com/users/1985577/screenshots/14204517/01.gif">
+                            <div class="layer">
+                                <h5>Facial Recognition Attendance Automation System </h5>
+                                <p>For More Details click this icon:</p>
+                                
+                                <a href="https://github.com/Arunsingh739/Automatic-attendance-management-system-with-face-recognition"><i class='bx bxs-face-mask' style="color: aliceblue;"></i></a>
+                               
+
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <img src="https://media1.tenor.com/m/J-ZRw-fOTboAAAAC/google-snake.gif">
+                            <div class="layer">
+                                <h5>Slither Quest: A Java-Based Snake Adventure</h5>
+                                <p>For More Details click this icon:</p>
+
+                                <a href="https://github.com/Arunsingh739/snake-game"><i class='bx bxs-face-mask' style="color: aliceblue;"></i></a>
+                                
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <img src="mess.png">
+                            <div class="layer">
+                                <h5>Mesh Management System</h5>
+                                <p>For More Details click this icon:</p>
+
+                                <a href="https://github.com/Arunsingh739/mess-management-system/tree/main"><i class='bx bxs-face-mask' style="color: aliceblue;"></i></a>
+                                
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <img src="p.png">
+                            <div class="layer">
+                                <h5>Professional Profile Showcase: Web Application</h5>
+                                <p>For More Details click this icon:</p>
+
+                                <a href="https://github.com/Arunsingh739/Personal-Portfolio"><i class='bx bxs-face-mask' style="color: aliceblue;"></i></a>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+
+        <section id="Services">
+            <div class="project">
+                <div class="container">
+                    <h1 class="sub-title">My <span>Services</span></h1>
+                    <div class="prj-list">
+                        <div>
+                            <i class='bx bx-code' style="color: #00eeff;"></i>
+                            <h2>Web Development</h2>
+                            <p>Plan, create and code internet sites and web pages with modern and artful design.</p>
+                            
+                        </div>
+                        <!-- <div>
+                            <i class='bx bx-cube' style="color: #00eeff;"></i>
+                            <h2>Bug Hunting</h2>
+                            <p>Specialized in creating clean, artful design that are both intuitive and functional.</p>
+                            
+                        </div> -->
+                        <div>
+                            <i class='bx bxl-android' style="color: #00eeff;"></i>
+                            <h2>Software Development</h2>
+                            <p>Mobile application developer with knowledge of Java.</p>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="contacts" id="Contact">
+            <div class="contact-text">
+                <h2>Contact <span>Me</span></h2>
+                <h4>Let's Work Together</h4>
+                <div class="contact-list">
+                    <li><i class='bx bxs-send'></i>ak8582670@gmain.com</li>
+                    <li><i class="bx bxs-phone-call" ></i>9455241495</li>
+                </div>
+                <div class="contact-icons">
+                    <a href="https://github.com/amit0-1" target="_blank"><i class='bx bxl-github'></i></a>
+                    <a href="https://www.linkedin.com/in/amit-kumar-79417925b" target="_blank"><i class="bx bxl-linkedin"></i></a>
+                </div>
+            </div>
+            
+        </section>
+        
+        <div class="last-text">
+            <p>Developed by Arun <i class='bx bx-copyright' style="color: white;"></i> 2024</p>
+        </div>
+        <a href="#Home" class="top"><i class='bx bx-up-arrow-alt' ></i></a>
+
+        <script src="./files/script.js"></script>
+    </body>  
+</html>
